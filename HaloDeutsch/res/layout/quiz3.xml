@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgquiz"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+<Button
+                android:id="@+id/btncreate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/option"
+                android:text=" " />
+            <RelativeLayout
+                android:id="@+id/Quiz1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:padding="2dp" >
+ <requestFocus />
+                <Button
+                    android:id="@+id/btncreate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/quiz1" />
+
+                <EditText
+                    android:id="@+id/satu"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/btncreate"
+                    android:layout_marginLeft="23dp"
+                    android:layout_toRightOf="@+id/textView1" >
+
+                    
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/btncreate"
+                    android:layout_alignTop="@+id/satu"
+                    android:layout_marginLeft="23dp"
+                    android:text="1"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </RelativeLayout>
+
+               <RelativeLayout
+                android:id="@+id/Quiz2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:padding="2dp" >
+
+                <Button
+                    android:id="@+id/btncreate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/quiz2" />
+
+                <EditText
+                    android:id="@+id/dua"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/btncreate"
+                    android:layout_marginLeft="23dp"
+                    android:layout_toRightOf="@+id/textView1" >
+
+                    
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/btncreate"
+                    android:layout_alignTop="@+id/dua"
+                    android:layout_marginLeft="23dp"
+                    android:text="2"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </RelativeLayout>
+
+              <RelativeLayout android:id="@+id/Quiz3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:orientation="vertical" android:padding="2dp">
+                <Button android:id="@+id/Button01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentTop="true" android:background="@drawable/quiz3"/>
+                <EditText android:id="@+id/empat" android:layout_width="225dp" android:layout_height="wrap_content" android:layout_alignBottom="@+id/Button01" android:layout_marginLeft="23dp" android:layout_toRightOf="@+id/TextView01">
+                   
+                </EditText>
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/Button01"
+                    android:layout_alignTop="@+id/empat"
+                    android:layout_marginLeft="23dp"
+                    android:text="4"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <EditText android:id="@+id/tiga" android:layout_width="225dp" android:layout_height="wrap_content" android:layout_above="@+id/empat" android:layout_alignLeft="@+id/empat"/>
+
+                <TextView
+                    android:id="@+id/TextViewzz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tiga"
+                    android:layout_alignBottom="@+id/tiga"
+                    android:layout_toLeftOf="@+id/empat"
+                    android:text="3"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </RelativeLayout>
+
+              <RelativeLayout
+                  android:id="@+id/Quiz4"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="5dp"
+                  android:layout_marginLeft="5dp"
+                  android:layout_marginRight="5dp"
+                  android:orientation="vertical"
+                  android:padding="2dp" >
+
+                  <Button
+                      android:id="@+id/Button03"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentLeft="true"
+                      android:layout_alignParentRight="true"
+                      android:layout_alignParentTop="true"
+                      android:background="@drawable/quiz4" />
+
+                  <EditText
+                      android:id="@+id/lima"
+                      android:layout_width="225dp"
+                      android:layout_height="wrap_content"
+                      android:layout_alignBottom="@+id/Button03"
+                      android:layout_marginLeft="23dp"
+                      android:layout_toRightOf="@+id/TextView03" />
+
+                  <TextView
+                      android:id="@+id/TextView03"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignLeft="@+id/Button03"
+                      android:layout_alignTop="@+id/lima"
+                      android:layout_marginLeft="23dp"
+                      android:text="5"
+                      android:textAppearance="?android:attr/textAppearanceLarge" />
+              </RelativeLayout>
+
+              <Button
+                  android:id="@+id/ok"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Ok" 
+                  android:background="@drawable/bgdialog"
+                  />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud" >
+ <View
+        android:id="@+id/spacer" 
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        />
+    <ViewFlipper
+        android:id="@+id/flipper1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:flipInterval="3000"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/str_img1"
+            android:src="@drawable/atas1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/str_img2"
+            android:src="@drawable/atas2" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/str_img2"
+            android:src="@drawable/atas3" />
+    </ViewFlipper>
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        layout="@layout/bottombar" />
+
+    <Button
+        android:id="@+id/btninfo"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/include1"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/btinfo"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/btnquiz"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btnwort"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bgquizmenu"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/btnwort"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/flipper1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/bgwortschatz"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/btnhelp"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/include1"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bthelp"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/btncreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/include1"
+        android:layout_toRightOf="@+id/btninfo"
+           style="?android:attr/buttonStyleSmall"
+        android:background="@drawable/btcreate" />
+   
+</RelativeLayout>

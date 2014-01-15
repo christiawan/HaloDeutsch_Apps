@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+<LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+             android:background="@drawable/bglayout_style1"
+    android:padding="5dp"
+        android:layout_margin="5dp" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bglayout_stylequiz2"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/co_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="99"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/co_imv"
+                    android:layout_width="246dp"
+                    android:layout_height="193dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/logo_fr" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/co_bplay"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="64dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/play"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="5dp"
+                        android:text="   " />
+
+                    <SeekBar
+                        android:id="@+id/co_seekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Antwort"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <RadioGroup
+                    android:id="@+id/co_choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/answer1"
+                        android:layout_width="wrap_content"
+                        android:text="Richtig" />
+
+                    <RadioButton
+                        android:id="@+id/answer2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Falsch" />
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

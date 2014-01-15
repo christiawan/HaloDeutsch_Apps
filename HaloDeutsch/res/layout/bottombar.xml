@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="@color/black">
+    
+    <View
+        android:id="@+id/spacer" 
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        />
+    
+    <ImageView
+        android:id="@+id/gi"
+        android:padding="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spacer"
+        android:layout_alignLeft="@id/spacer"
+        android:src="@drawable/sea_gi" />
+
+    <TextView android:id="@+id/magis"
+        android:layout_width="match_parent" 
+        android:layout_height="40dp"
+    	android:layout_toRightOf="@id/gi"
+    	android:layout_alignTop="@id/gi"
+    	android:gravity="center"
+    	android:text="MAGIS CAMP"    
+    	android:textColor="@color/white"
+        />
+    
+    <TextView android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+    	android:layout_toRightOf="@id/gi"
+    	android:layout_below="@id/magis"
+    	android:layout_alignBottom="@id/gi"
+    	android:gravity="center_horizontal"
+    	android:lines="2"
+    	android:text="Mobile Application\nGoethe Institut - SEAMOLEC"
+    	android:textSize="10sp"
+    	android:textColor="@color/white"
+        />
+</RelativeLayout>

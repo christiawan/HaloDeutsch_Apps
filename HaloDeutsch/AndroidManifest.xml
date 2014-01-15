@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.seamolec.halodeutsch"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="app.seamolec.halodeutsch.Loading"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="Mainmenu"></activity>
+        <activity android:name="vocab1"></activity>
+        <activity android:name="vocab2"></activity>
+        <activity android:name="vocab3"></activity>
+        <activity android:name="vocabTab"></activity>
+        <activity android:name="Quiz1"></activity>
+        <activity android:name="nilai1"></activity>
+        <activity android:name="Quiz2"></activity>
+        <activity android:name="Quiz3"></activity>
+        <activity android:name="nilai3"></activity>
+        <activity android:name="selamat"></activity>
+        <activity android:name="InfoTab"></activity>
+        <activity android:name="infogothe"></activity>
+        <activity android:name="infomagis"></activity>
+        <activity android:name="infoseamolec"></activity>
+        <activity android:name="vocabmenu"></activity>
+        <activity android:name="Create_cewek"></activity>
+        <activity android:name="Create_cowok"></activity>
+        <activity android:name="CreateTab"></activity>
+    </application>
+
+</manifest>

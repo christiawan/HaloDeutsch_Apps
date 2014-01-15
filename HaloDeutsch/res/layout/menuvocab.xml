@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1b"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mall"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btschreib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btzahlen"
+        android:layout_centerVertical="true"
+        android:background="@drawable/vocabschreibwaren"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/btlibens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btschreib"
+        android:layout_below="@+id/btschreib"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/vocablibensmittel"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/btzahlen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btschreib"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/vocabzahlen"
+        android:text=" " />
+
+</RelativeLayout>
